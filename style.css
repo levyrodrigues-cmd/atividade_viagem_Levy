@@ -1,0 +1,355 @@
+/* * { ... }: Selecionar todos os elementos da página (seletor universal) */
+
+/* .classe { ... }: Seleciona elementos por classe (ex: <div class="menu">) */
+
+/* #id { ... }: Seleciona um elemento único por ID (ex: <div id="topo">) */
+
+/* elemento:hover { ... }: Aplica estilos quando o mouse passa por cima do elemento */
+
+/* Selector { propriedade: valor; }: Estrutura básica para aplicar estilos a elementos */
+
+/* @keyframes: Define os quadros-chave (passos) de uma animação CSS */
+
+/* @media: Aplica estilos condicionais com base em características da tela */
+
+/* :root { --minha-variavel: valor; }: Declara variáveis globais no CSS */
+
+/* align-content / justify-items: Ajusta o alinhamento de itens dentro do grid */
+
+/* align-items: Alinha os itens ao longo do eixo cruzado no Flexbox (center, flex-start, stretch) */
+
+/* animation: Aplica uma animação declarada via regra @keyframes */
+
+/* background-color: Define a cor de fundo do elemento */
+
+/* background-image: Define uma imagem ou gradiente como fundo */
+
+/* background-position: Define a posição de alinhamento da imagem de fundo */
+
+/* background-repeat: Define se a imagem de fundo se repete (no-repeat, repeat) */
+
+/* background-size: Ajusta o tamanho da imagem de fundo (cover, contain) */
+
+/* border-radius: Arredonda os cantos da borda do elemento */
+
+/* border: Define espessura, estilo e cor da borda (ex: 1px solid black) */
+
+/* box-shadow: Adiciona efeitos de sombra ao redor do elemento */
+
+/* box-sizing: border-box; Inclui padding e border no cálculo do tamanho total do elemento */
+
+/* color: Define a cor do texto */
+
+/* cursor: Altera o ponteiro do mouse ao passar pelo elemento (pointer, default, wait) */
+
+/* display: grid; Transforma o container em um layout de grade bidimensional */
+
+/* display: flex; Transforma o container em um layout flexível unidimensional */
+
+/* display: Controla o comportamento do elemento (block, inline, inline-block, flex, grid, none) */
+
+/* filter: Aplica efeitos visuais como desfoque (blur) ou escala de cinza (grayscale) */
+
+/* flex-direction: Define a direção dos itens flex (row, column) */
+
+/* flex-grow / flex-shrink: Define como os itens crescem ou encolhem para ocupar o espaço */
+
+/* flex-wrap: Define se os itens podem quebrar para a próxima linha (nowrap, wrap) */
+
+/* float / clear: Flutua elementos para os lados e limpa o fluxo de flutuação */
+
+/* font-family: Define a família de fontes do texto */
+
+/* font-size: Define o tamanho da fonte */
+
+/* font-style: Aplica estilo ao texto, como itálico (italic, normal) */
+
+/* font-weight: Ajusta o peso ou espessura da fonte (bold, normal, 100-900) */
+
+/* gap: Define o espaçamento entre elementos em containers Flexbox ou Grid */
+
+/* grid-column / grid-row: Especifica onde um item começa e termina na grade */
+
+/* grid-template-columns: Define a quantidade e largura das colunas da grade */
+
+/* grid-template-rows: Define a quantidade e altura das linhas da grade */
+
+/* height: Define a altura do elemento */
+
+/* justify-content: Alinha os itens ao longo do eixo principal no Flexbox (center, space-between, etc.) */
+
+/* letter-spacing / word-spacing: Ajusta o espaçamento entre letras ou palavras */
+
+/* line-height: Define o espaçamento entre linhas de texto */
+
+/* margin: Espaçamento externo entre o elemento e seus vizinhos */
+
+/* max-width / min-width: Define a largura máxima e mínima permitidas */
+
+/* opacity: Controla o nível de transparência do elemento (de 0 a 1) */
+
+/* outline: Linha de destaque externa (frequentemente usada para foco de acessibilidade) */
+
+/* overflow: Controla o conteúdo que estourar o tamanho do elemento (visible, hidden, scroll, auto) */
+
+/* padding: Espaçamento interno entre o conteúdo e a borda */
+
+/* position: Define o tipo de posicionamento (static, relative, absolute, fixed, sticky) */
+
+/* text-align: Alinha o texto (left, right, center, justify) */
+
+/* text-decoration: Adiciona ou remove decorações de texto (underline, none) */
+
+/* text-shadow: Adiciona efeitos de sombra ao texto */
+
+/* text-transform: Altera maiúsculas/minúsculas (uppercase, lowercase, capitalize) */
+
+/* top / bottom / left / right: Ajusta a posição de elementos posicionados */
+
+/* transform: Aplica efeitos de rotação, escala ou translação (rotate, scale, translate) */
+
+/* transition: Cria efeitos suaves ao mudar propriedades CSS (ex: transition: all 0.3s ease) */
+
+/* var(--minha-variavel): Usa o valor de uma variável declarada */
+
+/* visibility: Controla a visibilidade do elemento sem remover seu espaço na tela */
+
+/* white-space: Controla como espaços em branco e quebras de linha são tratados */
+
+/* width: Define a largura do elemento */
+
+/* z-index: Define a ordem de empilhamento vertical (qual elemento fica por cima) */
+
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+    margin: 0;/* margin: Espaçamento externo entre o elemento e seus vizinhos */
+    padding: 0; /* padding: Espaçamento interno entre o conteúdo e a borda */
+    box-sizing: border-box;/* box-sizing: border-box; Inclui padding e border no cálculo do tamanho total do elemento */
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body{
+    background-color: rgb(159, 255, 255);
+    color: rgb(15, 15, 15);
+    line-height: 1.6;/* line-height: Define o espaçamento entre linhas de texto */
+
+}
+.cabecalho{
+    background-color: white;
+    color: black;
+    display: flex;/* display: Controla o comportamento do elemento (block, inline, inline-block, flex, grid, none) */
+    justify-content: space-between;/* justify-content: Alinha os itens ao longo do eixo principal (center, space-between, etc.) */
+    align-items: center;/* align-items: Alinha os itens ao longo do eixo cruzado (center, flex-start, stretch) */
+    padding: 10px 30px; /* padding: Espaçamento interno entre o conteúdo e a borda */
+    
+    /*para o cabeçalho ficar travado na tela*/
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.logo{
+    gap: 15px;/* gap: Define o espaçamento entre elementos em containers Flexbox ou Grid */
+    display: flex;/* display: Controla o comportamento do elemento (block, inline, inline-block, flex, grid, none) */
+    align-items: center;/* align-items: Alinha os itens ao longo do eixo cruzado (center, flex-start, stretch) */
+
+}
+.navegacao{
+    display: flex;/* display: Controla o comportamento do elemento (block, inline, inline-block, flex, grid, none) */
+    gap: 20px;/* gap: Define o espaçamento entre elementos em containers Flexbox ou Grid */
+}
+.menu-links a{
+    color: black;
+    text-decoration: none;/* text-decoration: Adiciona ou remove decorações de texto (underline, none) */
+    font-size: 20px;
+    margin: 0px 15px;/* margin: Espaçamento externo entre o elemento e seus vizinhos */
+}
+.redes-sociais{
+    gap: 14px;/* gap: Define o espaçamento entre elementos em containers Flexbox ou Grid */
+    display: flex;/* display: Controla o comportamento do elemento (block, inline, inline-block, flex, grid, none) */
+    border-left: 2px solid rgb(7, 7, 7);
+    padding-left: 20px ;/* padding: Espaçamento interno entre o conteúdo e a borda */
+}
+.redes-sociais a{
+    color: black;
+    text-decoration: none;
+}
+.menu-links a:hover{
+    color: rgba(128, 128, 128, 0.379);
+}
+.redes-sociais a.whatsapp:hover{
+    color: #25D366;
+}
+.redes-sociais a.face:hover{
+    color: #1877F2;
+}
+.redes-sociais a.insta:hover{
+    color: #a4056a;
+}
+.redes-sociais a:hover{
+    transform: scale(1.3);
+}
+.banner{
+    position: relative;
+    width: 100%;
+    height: 240px;
+}
+.imagem{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.texto{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.texto h1{
+    font-size: 35px;
+    margin-bottom: 5px;
+    text-shadow: 0 2px 2px #040404;
+}
+.texto p{
+    font-size: 16px;
+    text-shadow: #040404;
+    text-align: center;
+}
+.container{
+    max-width: 900px;
+    text-align: center;
+    margin: 50px auto;
+}
+.titulo{
+    font-size: 26px;
+    color: black;
+    margin-bottom: 10px;
+}
+.subtitulo{
+    font-size: 14px;
+    color: black;
+    margin-bottom: 10px;
+}
+.grade-viagem{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));       
+    gap: 25px; 
+}
+.foto{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+.card-viagem{
+    background-color: rgb(236, 231, 231);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px #080808;
+    display: flex;
+    flex-direction: column;
+}
+.card-viagem:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px #e9eded;
+}
+.secao {
+    max-width: 1100px;
+    margin: auto;
+    padding: 120px 25px;
+
+}
+.etiqueta{
+    color: #1677ff;
+    font-size: 30px;
+}
+.titulo-textos{
+    max-width: 650px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    color: #1677ff;
+}
+.area-inscricao{
+        display: flex;
+        gap: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .coluna-form{
+        flex: 1;
+        min-width: 320px;
+        background-color: rgb(253, 253, 253);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px #fcfcfc;
+    }
+    .coluna-midia{
+        flex: 1;
+        min-width: 320px;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .coluna-form label{
+        font-size: 14px;
+        font-weight: bold;
+        color: #000000;
+    }
+    .coluna-form input[type="text"],
+    .coluna-form input[type="password"],
+    .coluna-form input[type="email"],
+    .coluna-form input[type="date"],
+    .coluna-form select{
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        background-color: #0cc6e3;
+        border-radius: 5px;
+        color: aliceblue;
+        font-size: 14px;
+    }
+    .btn-enviar{
+        background-color: #0cc6e3;
+        color: aliceblue;
+        border: #f7f7f7;
+        padding: 12px 24px;
+        border-radius: 6px;
+        font-weight: bold;
+    }
+    .btn-enviar:hover{
+        background-color: #0767849e;
+    }
+.botao-comprar{
+    display: block;
+    text-align: center;
+    background-color: rgb(5, 152, 244);
+    color: rgb(239, 241, 241);
+    padding: 12px 0px;
+    border-radius: 6px;
+    text-decoration: NONE;
+    font-weight: bold;
+}
+.botao-comprar:hover{
+    background-color: rgb(24, 0, 111);
+}
+footer{
+    background-color: white;
+    height: 50px;
+    color: rgb(5, 92, 223);
+    text-align: center;
+    padding: 15px 40px;
+    font-size: 14px;
+    margin-top: 50px;
+}
